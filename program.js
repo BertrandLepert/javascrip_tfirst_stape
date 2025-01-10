@@ -83,6 +83,50 @@ const guichetier = "tranbert"
 let NomDuFilm = ticket.NomFilm
 let NumeroDeSalle = ticket.numeroSalle
 
-let disptext = 'Bonjour ' + guichetier + ', votre film ' + NomDuFilm + ' est en salle ' + NumeroDeSalle
+let disptext = `Bonjour ${guichetier}, votre film ${NomDuFilm} est en salle ${NumeroDeSalle}`
 
 console.log(disptext)
+
+//les tableaux
+
+//1er tableau
+
+const maCollectionDeFilm = ["Titanic", 'star wars', 'le seigneur des anneaux']
+
+// ou via des variables
+
+const monFilmPrefere = "l'empire contre attaque"
+const FilmNaz = "la menace fantome"
+
+const maCollectionDeFilmBis =[monFilmPrefere,FilmNaz]
+
+// on accède au premier élément du tableau
+
+PremierFilmContenu = maCollectionDeFilm[0]
+
+const nombreDefilms = maCollectionDeFilm.length
+
+console.log(nombreDefilms)
+
+//ajout via la méthode push
+
+maCollectionDeFilm.push('retour vers le futur')
+
+console.log(maCollectionDeFilm)
+
+//supression par pop
+
+maCollectionDeFilm.pop()
+
+//exercice organisateur de soirées
+
+const PlayList = ["Warriors of the wolrd", "Die with honnor", "Kings of metal"]
+
+totalMorceau = PlayList.length
+
+PlayList.push("baby")
+PlayList.push("cross volé")
+
+PlayList.pop()
+
+console.log(PlayList)
